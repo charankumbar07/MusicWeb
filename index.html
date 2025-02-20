@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="utili.css">
+
+<body>
+    <div class="nav display-flex align-items ">
+        <img class="invert logo" src="img/logo.svg" alt="">
+        <div class="home display-flex align-items justify-content">
+            <img class="invert img" src="img/home.svg" alt="">
+            <img class="invert img" src="img/search.svg" alt="">
+            <input class="input" type="text" placeholder="Search">
+        </div>
+        <div class="btns display-flex align-items">
+            <button class="signup btn">Sign Up</button>
+            <button class="login btn">Log in</button>
+        </div>
+    </div>
+    <div class="main display-flex">
+        <div class="left">
+            <img class="invert closebtn" src="img/close.svg" alt="">
+
+            <div class="library display-flex ">
+                <img class="invert lblogo" src="img/playlist.svg" alt="">
+                <h2>Your Library</h2>
+            </div>
+            <div class="songlist">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <img width="40px" class="invert hamburgercantainer" src="img/hamburger.svg" alt="">
+            <h1>Spotify Playlists</h1>
+            <div class="cardcontainer display-flex ">
+
+            </div>
+
+            <div class="playbar">
+                <div class="playing">
+                    <div class="songinfo"></div>
+                    <div class="songbtn">
+                        <img id="prev" src="img/prevsong.svg" alt="">
+                        <img id="play" src="img/play.svg" alt="">
+                        <img id="next" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="voltim display-flex ">
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img id="volbtn" class="invert" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
